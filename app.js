@@ -70,9 +70,9 @@ app.get('/', async (req, res) => {
         for (const visit of result) { 
             console.log('visit',visit);
             str = str +`<tr>
-                        <td>  ${visit.id}  </td>
-                        <td>  ${visit.name}  </td>
-                        <td>  ${visit.count}  </td>
+                        <td>${visit.id}</td>
+                        <td>${visit.name}</td>
+                        <td>${visit.count}</td>
                         </tr>
                         `;                      
         };    
