@@ -78,15 +78,17 @@ app.get('/', async (req, res) => {
         };    
 
         res.send(`<table>
-            <thead>                
-                <th>Id</th>
-                <th>Name</th>
-                <th>Visits</th>                
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Visits</th>
+                </tr>
             </thead>
             <tbody>               
                 ${str}               
             </tbody>               
-        </table> `);                
+        </table>`);                
     });       
 });
 
