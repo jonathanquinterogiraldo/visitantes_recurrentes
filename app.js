@@ -73,17 +73,15 @@ app.get('/', async (req, res) => {
                         <td>${visit.id}</td>
                         <td>${visit.name}</td>
                         <td>${visit.count}</td>
-                        </tr>
-                        `;                      
+                        </tr>`; 
+                                             
         };    
 
-        res.send(`  <table>
-            <thead>
-                <tr>
-                    <th>Id</th>
-                    <th>Name</th>
-                    <th>Visits</th>
-                </tr>
+        res.send(`<table>
+            <thead>                
+                <th>Id</th>
+                <th>Name</th>
+                <th>Visits</th>                
             </thead>
             <tbody>               
                 ${str}               
